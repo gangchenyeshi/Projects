@@ -1,0 +1,60 @@
+.location-box .location {
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 10px, 10px rgba(50, 50, 70, 0.5);
+}
+.location-box .date {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    text-shadow:10px, 10px rgba(50, 50, 70, 0.5);
+}
+.weather-box {
+    text-align: center;
+}
+.weather-box  .temp{
+    position: relative;
+    display: inline-block;
+    margin: 15px auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+
+    padding: 15px 25px;
+    color: #fff;
+    font-size: 52px;
+    font-weight: 900;
+
+    text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+    text-align: center;
+    box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+
+}
+.weather-box  .weather{
+
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+
+    text-shadow: 2px 3px rgba(50, 50, 70, 0.5);
+    
+}
+
+.card-box {
+    background-color: rgba(165, 143, 143, 0.5);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    color: #fff;
+    font-size: 14px;
+    
+
+    text-shadow: 2px 3px rgba(50, 50, 70, 0.2);
+}
+.card-box p {
+    padding: 5px;
+    margin: 5px;
+}
