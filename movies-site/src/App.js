@@ -28,10 +28,10 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/popular/page-no/:page" component={Popular} />
         <Route exact path="/popular/" component={Popular} />
-        <Route exact path="/popularBattle" component={PopularBattle} />
+        {/* <Route exact path="/popularBattle" component={PopularBattle} />
         <Route exact path="/weekly" component={Weekly} />
         <Route exact path="/weeklyBattle" component={WeeklyBattle} />
-        <Route exact path="/favorites" component={Favorites} />
+        <Route exact path="/favorites" component={Favorites} /> */}
       </AnimatedSwitch>
 
 

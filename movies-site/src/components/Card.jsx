@@ -13,9 +13,14 @@ const setVoteClass = (vote) =>  { //setVoteClass is Class style for change color
     }
 };
 
-const Card = ({ title, overview, poster_path, release_date, vote_average }) => {
+const Card = ({id, title, overview, poster_path, release_date, vote_average }) => {
 
-
+const viewMovie = () => {
+    // console.log("Trying to view the Movie");
+    // console.log(title);
+    const url="https://www.themoviedb.org/movie/" + id
+    window.location.href = url
+}
     return (
 
         <div className="card-group">
@@ -33,6 +38,7 @@ const Card = ({ title, overview, poster_path, release_date, vote_average }) => {
             <div  className="card-body movie-over">
                 <h6 className="card-title">Description :</h6>
                 <p className="card-text">{overview}</p>
+                <input type="button" onClick={viewMovie} value="View"/>
             </div>
             </div>
             

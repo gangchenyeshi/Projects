@@ -45,7 +45,7 @@ const Popular = () => {
     }
     return (
         <div className="container-fluid">
-            <h1>Popular !</h1>
+            <h1>Most Popular Movies</h1>
 
             <div className="row">
                 {movies.length > 0 && movies.map(movie => (

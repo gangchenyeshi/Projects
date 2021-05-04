@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Card from "../components/Card";
 import moment from 'moment';
 // import { useHistory } from "react-router-dom";
-
+import "../css/Home.css"
 
 const Search_API = "https://api.themoviedb.org/3/search/movie?&api_key=46a12a0dcce2af5d37ce67d499098b1f&query=";
 
@@ -61,8 +61,8 @@ const handleOnChange = (e) => {
     return (
         <div className="container-fluid">
           <div className="row d-flex justify-content-end">
-                <div className="col-6 col-md-4 col-lg-3">
-                    <form onSubmit={handleOnSubmit} class="d-flex">
+                <div className="col-sm-6 col-md-4 col-lg-3">
+                    <form onSubmit={handleOnSubmit} className="search">
                         <input class="form-control me-2" 
                                type="search" 
                                placeholder="Search" 
@@ -72,9 +72,9 @@ const handleOnChange = (e) => {
                     </form>
                 </div>
             </div>
-            <h1>Home !</h1>
+            <h1>Latest Movies Released</h1>
 
-            <div className="row">
+            <div className="row d-flex justify-content-center">
                 {movies.length > 0 && movies.map(movie => (
                     <div className="col-sm-12 col-md-4 col-lg-3">
                         <Card key={movie.id} {...movie} />
