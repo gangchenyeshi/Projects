@@ -4,11 +4,25 @@ import PokeList from "./components/PokeList";
 import './App.css';
 
 function App() {
-  const [ pokemon, setPokemon] = useState();
+  const [pokemon, setPokemon] = useState({
+    name: "bulbasaur", //default PokeInfo load the first pokemon name and url
+    url: "https://pokeapi.co/api/v2/pokemon/1/"
+  });
   return (
-    <div>
-      <PokeInfo pokemons={pokemon}/>
-      <PokeList onPokemonClick={setPokemon}/>
+    <div className="">
+      <div className="row">
+        <div className="col-12">
+          <PokeInfo pokemons={pokemon} />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-12">
+          <PokeList onPokemonClick={setPokemon} />
+        </div>
+      </div>
+
+
+
     </div>
   );
 }

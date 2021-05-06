@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import PokeList from "./PokeList";
 
 const PokeThumbnail = ({pokemon}) =>{ //Destructuring the Props
     const [images, setImages] = useState("");
